@@ -23,6 +23,8 @@ public class PriceWithDay {
                 System.out.println(Quality);
             }else if (Sellln>10 && Sellln<=15){
                 Quality = TotalQuality + 2 * 10+(Sellln-10)*3;
+            }else if (Sellln >15){
+                Quality=0;
             }
         }
 
