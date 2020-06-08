@@ -14,4 +14,11 @@ public class PriceWithDayTest {
         int value=priceWithDay.PriceAndDay(1,51,50);
         assert value==0;
     }
+
+    @Test
+    public void SelllnLessThan0Test(){
+        int value=priceWithDay.PriceAndDay(1,-1,50);
+        assert value==50;
+    }
+
 }
