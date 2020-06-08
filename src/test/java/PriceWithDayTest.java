@@ -28,4 +28,10 @@ public class PriceWithDayTest {
         assert value==50;
     }
 
+    @Test
+    public void BackStageSellln10Test(){
+        int value=priceWithDay.PriceAndDay(2,6,15);
+        assert value==62;
+    }
+
 }
