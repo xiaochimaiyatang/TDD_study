@@ -5,13 +5,20 @@ public class PriceWithDayTest {
 
     @Test
     public void NormalPriceTest() {
-        int value=priceWithDay.PriceAndDay(1,10,50);
+        int value=priceWithDay.PriceAndDay(1,10,20);
         assert value==40;
     }
 
     @Test
+    public void NormalMoreThanSelllnTest() {
+        int value=priceWithDay.PriceAndDay(1,22,20);
+        System.out.println(value);
+        assert value==26;
+    }
+
+    @Test
     public void SelllnMoreThan50Test(){
-        int value=priceWithDay.PriceAndDay(1,51,50);
+        int value=priceWithDay.PriceAndDay(1,36,20);
         assert value==0;
     }
 
