@@ -46,4 +46,10 @@ public class PriceWithDayTest {
         assert value==0;
     }
 
+    @Test
+    public void BackStageSellTypeWrongTest(){
+        int value=priceWithDay.PriceAndDay(0,16,15);
+        assert value==50;
+    }
+
 }

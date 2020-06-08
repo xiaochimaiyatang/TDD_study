@@ -26,6 +26,8 @@ public class PriceWithDay {
             }else if (Sellln >15){
                 Quality=0;
             }
+        }else{
+            System.out.println("输入错误");
         }
 
         return Quality;
