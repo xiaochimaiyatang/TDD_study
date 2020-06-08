@@ -8,6 +8,8 @@ public class PriceWithDay {
             int TotalQuality=50;
             if (Sellln>=0 &&Sellln<=50){
                 Quality=50-1*Sellln;
+            }else if(Sellln>50){
+                Quality=0;
             }
 
         }

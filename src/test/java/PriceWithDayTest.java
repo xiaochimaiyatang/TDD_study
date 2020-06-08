@@ -9,4 +9,9 @@ public class PriceWithDayTest {
         assert value==40;
     }
 
+    @Test
+    public void SelllnMoreThan50Test(){
+        int value=priceWithDay.PriceAndDay(1,51,50);
+        assert value==0;
+    }
 }
